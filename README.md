@@ -1,27 +1,167 @@
 # python_lectures
- Codes from Introduction to programming using Python by Ana Bell
+ Notes from Introduction to programming using Python by Ana Bell.
 
 ## Lecture_1 notes
-   # Objects - objects have a type and defines the kinds of things programs can do to them
-    Scalar Objects:
-      These are the primitive data objects
+   ### Objects 
+
+   Objects have a type and defines the kinds of things programs can do to them.
+   Syntax to know the datatype of objects type(Object) .
+
+   #### Scalar Objects:
+
+   These are the primitive data objects.
+
       1. int - represent integers (1,2,3,-1)
       2. float - represent real numbers (1.2, 3.6)
       3. bool - represent Boolean ( True or False)
       4. NoneType - has only one value None
-    Syntax to know the datatype of objects type(Object)
-   # Type Casting: Conversion of one datatype to another
+
+   #### Non-scalar objects:
+
+   Have Internal structures that can be accessed.
+
+      1. Lists
+      2. Dictionary
+      3. Sequence of Characters
+
+   ### Type Casting
+
+   Conversion of one datatype to another.
+
       1. float() - converts to float
       2. int() - converts to int
       3. round() - implicit function to convert to int by rounding off
-   # Expression: Objets and operators combine together to form expression
-      Expression has a value and type 
+
+   ### Expression
+
+   Objects and operators combined to form expression.
+      Expression has a value and type .
+
          1. 5+2 , has value 7 and type int
          2. 5/2 , has value 2.5 and type float
-      In expression if one object is float then the value will have type float
-   # Variables :
-       In computer science the variable is bound to single value at a time 
-       whereas in maths it could have multiple values
-       By assigning variables to values we could reuse it and it improves the readability of program
-       We can also rebound the variable
- 
+
+   In expression if one object is float then the value will have type float.
+
+   ### Variables 
+
+   In computer science the variable is bound to single value at a time whereas in maths it could have multiple values.
+   By assigning variables to values we could reuse it, and it improves the readability of program.
+   The value of variable can also be rebounded.
+   
+## Lecture_2 Notes
+
+### Strings
+
+Sequence of case-sensitive characters(Letters, Special characters, spaces, digits).
+Enclose in quotation marks or single quotes.
+
+    a = "Hello" 
+    b = 'Hello'
+
+**Concatenation** refers to joining two or more string objects together to form new object.
+It can be done using '+' operator.
+
+**Repeating Strings** is done using '*' operators .
+It works only between String and number.
+
+    c = a+b
+    d = a*3
+
+here c is HelloHello, and d is HelloHelloHello.
+
+len() function is used to retrieve the length of String inside the parentheses.
+
+### Slicing and Substrings
+
+Grabbing of individual characters at different position.
+We use square brackets to do this python.
+
+    s = "abc"
+    s[0] is "a"
+    s[1] is "b"
+
+Indexing starts from 0 in python.
+Python also has negative indexing.
+
+    s[-1] = "c"
+    s[-2] = "b"
+
+Slicing can be done to get **SubStrings**
+
+Syntax: *String[start:stop:step]*
+
+It gets characters from start to stop - 1 taking every step characters.
+If step is not given the default step is 1.
+Positive steps means go left to right whereas negative step means go right to left.
+
+**Strings are immutable Objects**.
+We could only create the objects which are the versions of original one.
+
+### Printing
+
+Command to display is *print()*.
+By separating the objects using , we could print multiple objects.
+Concatenation is done for same objects only.
+
+    print("hello")
+    print(a,b,c)
+
+### Getting input
+
+Command is *input()*.
+Inside the parentheses the prompt is given.
+We usually need to store the input in variable and the input is saved as string.
+
+    a = input("Enter Something")
+
+Numbers are also stored as strings thus TypeCasting is required
+
+### Newton's Algorithm
+
+It is used to find roots of the polynomial .
+Algorithm uses Successive approximation .
+    next_guess = guess - f(guess)/ f'(guess).
+
+### F string
+
+F string is the formatted string referral Expressions are bracketed using curly braces {}.
+Expressions in {} are calculated during run time and automatically converts to string and then concatenate.
+
+    n = 3
+    m = 4
+    print(f"The result is {n*m}")
+
+### Branching 
+
+In Cs there are two notions '='  
+    a = b assigning
+    a == b checking equality and return bool
+
+Certain comparisons to return bool
+
+    i>j     i<j
+    i>=j    i<=j
+    i==j    i!=j
+
+Logical Operators
+
+    not a (negation)
+    a and b (True only when both are True)
+    a or b (False only when both are False)
+
+**If-Else**
+
+Check condition and performs the block only if condition is true
+
+    if <condition>:
+        <code>
+        <code>
+    elif <condition>:
+        <code>
+        <code>
+    else:
+        <code>
+        <code>
+
+First block where the condition is true is performed, when all conditions in if block is false else block performed
+***Indentation matters in python***
