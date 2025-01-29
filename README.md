@@ -165,3 +165,30 @@ Check condition and performs the block only if condition is true
 
 First block where the condition is true is performed, when all conditions in if block is false else block performed
 ***Indentation matters in python***
+
+## Lecture 3 notes
+
+### Iteration
+**While Loop**
+loops as long as condition is true
+
+    while <condition>:
+        <code>
+        <code>
+
+The while loop repeats all the statements inside the block until the condition becomes False. While loop can repeat the blocks of code indefinitely
+
+**For Loop**
+
+For loop is used to iterate through a number in sequence, element of string
+    
+    for <variable> in <sequence>:
+        <code>
+
+**Range**
+
+start:First int generated,
+stop : goes upto but not including,
+step : generates in the steps of.
+
+    range(start,stop,step)
