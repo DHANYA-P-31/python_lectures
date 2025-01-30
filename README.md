@@ -200,12 +200,6 @@ start:First int generated,
 stop : goes upto but not including,
 step : generates in the steps of.
 
-<<<<<<< Updated upstream
-    range(start,stop,step)
-=======
-<<<<<<< HEAD
-    range(start,stop,step)
-=======
     range(start,stop,step)
 
 ## Lecture 4 Notes
