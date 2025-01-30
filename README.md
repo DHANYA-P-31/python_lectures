@@ -164,6 +164,15 @@ Check condition and performs the block only if condition is true
         <code>
 
 First block where the condition is true is performed, when all conditions in if block is false else block performed
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+***Indentation matters in python***
+=======
+>>>>>>> new
+>>>>>>> Stashed changes
 ***Indentation matters in python***
 
 ## Lecture 3 notes
@@ -191,4 +200,31 @@ start:First int generated,
 stop : goes upto but not including,
 step : generates in the steps of.
 
+<<<<<<< Updated upstream
     range(start,stop,step)
+=======
+<<<<<<< HEAD
+    range(start,stop,step)
+=======
+    range(start,stop,step)
+
+## Lecture 4 Notes
+
+**break Statement**
+
+Immediately exits the innermost loop it is in, skips the remaining expressions in block of code.
+
+### Guess and check 
+
+The process is called exhaustive enumeration. 
+This is applied to a problem where we were able to guess a solution to the problem
+and to check whether the solution is correct.
+We could keep guessing until a solution is found or guessed all values.
+
+### Floating point implementation:
+
+Operations on some floats can have a small error and 
+the small error will have big effect if operations are done many times.
+The implementation of float depends on computer hardware and not on the programming language.
+The hardware is implemented using binary.
+We enter the inputs in decimal and computer converts it to binary
