@@ -164,15 +164,7 @@ Check condition and performs the block only if condition is true
         <code>
 
 First block where the condition is true is performed, when all conditions in if block is false else block performed
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< Updated upstream
-***Indentation matters in python***
-=======
->>>>>>> new
->>>>>>> Stashed changes
+
 ***Indentation matters in python***
 
 ## Lecture 3 notes
