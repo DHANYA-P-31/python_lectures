@@ -214,3 +214,29 @@ the small error will have big effect if operations are done many times.
 The implementation of float depends on computer hardware and not on the programming language.
 The hardware is implemented using binary.
 We enter the inputs in decimal and computer converts it to binary
+
+## Lecture 5 Notes
+
+### Fraction
+
+Real numbers are converted to int by multiplying real number with 
+ multiple of 2 , Sometimes when there is no such power of 2 approximation is done.
+
+Floating point digits are represented by pair of integers .(significant digit and base 2 exponent)
+
+    (1,1) = 1*2^1
+    (1,-1) = 1*2^-1
+
+Never use == to check float.
+Instead, use approximation method.
+
+### Approximation method
+
+By approximation method the answer is close enough to the ideal answer.
+Approximation algorithms have 2 parameters
+
+    epsilon - how close we are to answer
+    increment - how much to increase guess
+
+Increasing epsilon - less accurate and faster program
+Decreasing increment = more accurate and slower program
