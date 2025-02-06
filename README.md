@@ -240,3 +240,31 @@ Approximation algorithms have 2 parameters
 
 Increasing epsilon - less accurate and faster program
 Decreasing increment = more accurate and slower program
+
+## Lecture 6 Notes
+
+### Bisection Search
+
+It is applied to the problem with an inherent order to the range of possible answers.
+
+1.Suppose we know that the answer is within certain interval, then guess the midpoint of the interval.
+
+2.If not answer check if answer is greater than or less than midpoint.
+
+3.Change Interval and then Repeat
+
+Bisection Search is a logarithmic algorithm. Process cuts the set of things in half at each step.
+Exhaustive algorithm is linear, and bisection search which is logarithmic is better than linear.
+
+Search spaces gets smaller quickly at the beginning and then more slowly later.
+
+### Newton Raphson algorithm
+
+Algorithm to find roots of a polynomial.
+If p(x) is a polynomial.
+As of Newton Raphson Algorithm if g is an approximation to root, then g-p(g)/p'(g) is better approximation.
+
+### Decomposition and abstraction
+
+Decomposition - The program is divided into self containing parts and can be combined to solve the problm.
+Abstraction - Ignore the unnecessary details, used to separate what something does and how does it do.
