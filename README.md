@@ -289,7 +289,58 @@ body - set of instructions to execute when the function is called.
 
 return value - Return the result of function
 
+1. keyword for creating function - def
+2. Keyword for returning output - return
+
 As soon as function is called formal parameters in the function get replaced with the values from function call.
 Python executes expression in the body of the function
 
 The function call is replaced by return value. If there is no return value python returns None.
+
+## Lecture_8
+
+### return
+
+1. return used inside function only 
+2. Only one return value is executed for a function
+3. Codes after return will not be executed in the function
+4. Value associated with return is given to the function call
+
+### print
+
+1. print can be used inside and outside the function call
+2. Multiple print statement can be executed
+3. Line of codes after print statement will be executed
+4. Values inside the print is outputted to the console
+
+print is a function which returns None.
+
+### Function Calls
+
+1. It creates a new environment inside the function call
+2. Like a mini program that it needs to complete
+3. The mini program runs with assigning its parameters to some inputs
+4. It executes the part of the body
+5. It returns a value
+6. The environment disappears after returning the value
+
+### Environment
+
+Global environment - where user interacts with python interpreter, where the program starts
+
+Invoking a function creates new environment.
+
+### Scope
+
+Formal parameters get bound to the value of input parameters .
+Scope is a mapping of name to object, defines context in which the value is evaluated.
+Expressions in body of of function evaluated with respect to this new scope
+
+### Functions as Objects
+
+Functions are also first class Objects
+1. They have a type
+2. They can be assigned to a value bound to name
+3. They can be used as argument to another function
+4. Function can be returned by other object
+
