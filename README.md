@@ -266,5 +266,30 @@ As of Newton Raphson Algorithm if g is an approximation to root, then g-p(g)/p'(
 
 ### Decomposition and abstraction
 
-Decomposition - The program is divided into self containing parts and can be combined to solve the problm.
+Decomposition - The program is divided into self containing parts and can be combined to solve the problem.
+
 Abstraction - Ignore the unnecessary details, used to separate what something does and how does it do.
+
+## Lecture 7
+
+### Functions:
+
+Defining the functions allocates memory for function. Function is only used when it is called.
+Same function can be called numerous times.
+
+### Function Characteristics
+
+Name -  Variable bound to function argument
+
+Parameters - The inputs
+
+docstring - Provides the specification of function
+
+body - set of instructions to execute when the function is called.
+
+return value - Return the result of function
+
+As soon as function is called formal parameters in the function get replaced with the values from function call.
+Python executes expression in the body of the function
+
+The function call is replaced by return value. If there is no return value python returns None.
