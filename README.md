@@ -334,7 +334,7 @@ Invoking a function creates new environment.
 
 Formal parameters get bound to the value of input parameters .
 Scope is a mapping of name to object, defines context in which the value is evaluated.
-Expressions in body of of function evaluated with respect to this new scope
+Expressions in body of function evaluated with respect to this new scope
 
 ### Functions as Objects
 
@@ -344,3 +344,31 @@ Functions are also first class Objects
 3. They can be used as argument to another function
 4. Function can be returned by other object
 
+## Lecture_9
+
+### Lambda function
+
+Lambda function creates a procedure or function but simply does not bind a name to it.
+Lambda function creates an anonymous function, and is useful when function is used only once .
+
+### Tuples
+
+Tuple is a compound data type and is immutable.
+Tuples are indexable ordered sequence of object.
+Syntax to create a tuple object is ().
+Tuple elements can be of different datatypes.
+
+    tuple_ex = (1,"Hello",6.5)
+
+Square bracket is used to  grab element at a particular index.
+Tuple is used to return more than one value from a function.
+
+**Variable number of arguments**
+
+Python allows a function to take variable  number of arguments using * notation. 
+Numbers are stored a tuple.
+
+### List
+
+Lists are indexable ordered sequence of objects, they are usually homogenous(i.e. consists of elements of similar data type).
+Denoted by Square brackets, Lists are mutable(we can change the element values in list).
