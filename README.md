@@ -368,7 +368,33 @@ Tuple is used to return more than one value from a function.
 Python allows a function to take variable  number of arguments using * notation. 
 Numbers are stored a tuple.
 
+## Lecture_10
+
 ### List
 
 Lists are indexable ordered sequence of objects, they are usually homogenous(i.e. consists of elements of similar data type).
 Denoted by Square brackets, Lists are mutable(we can change the element values in list).
+
+### Operations on list
+
+**append** - Adds an element to the end of the list L.append(element), It returns None
+
+**Concatenation** - concatenation is done by + operator 
+        
+     L1 = [1,2]
+     L2 = [6,3]
+     L3 = L1+L2 # L3 = [1,2,6,3]
+
+**split** - Every word in string s can be converted into List of words by using a function split()
+
+**join** - Converts string to list (Syntax ''.join(L)), inside '' we could give the separator.
+
+**sort** - Sort thr elements in the list l.sort(), it mutates the list
+
+**reverse** - Reverse the elements in list l.reverse(), it mutates the list
+
+**sorted** - returns a sorted version of the list New_list = sorted(list), Here no mutation takes place
+
+**extend** - add elements to end of the list
+
+**clear** - clear is used to remove all elements from list
