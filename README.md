@@ -387,9 +387,9 @@ Denoted by Square brackets, Lists are mutable(we can change the element values i
 
 **split** - Every word in string s can be converted into List of words by using a function split()
 
-**join** - Converts string to list (Syntax ''.join(L)), inside '' we could give the separator.
+**join** - Converts list to string (Syntax ''.join(L)), inside '' we could give the separator.
 
-**sort** - Sort thr elements in the list l.sort(), it mutates the list
+**sort** - Sort the elements in the list l.sort(), it mutates the list
 
 **reverse** - Reverse the elements in list l.reverse(), it mutates the list
 
@@ -398,3 +398,17 @@ Denoted by Square brackets, Lists are mutable(we can change the element values i
 **extend** - add elements to end of the list
 
 **clear** - clear is used to remove all elements from list
+
+## Lecture_11
+
+**copying the list** L_copy = L[:]
+
+**remove** 
+
+1. Delete element at specific index - del(L[index])
+2. Remove element at the end of the list L.pop()
+3. Remove a specific element L.remove(element), If the element has multiple occurrence removes the first occurrence, if it s not in list gives error
+
+**Aliasing**
+
+Pointing the same object using various names.
