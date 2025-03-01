@@ -401,7 +401,7 @@ Denoted by Square brackets, Lists are mutable(we can change the element values i
 
 ## Lecture_11
 
-**copying the list** L_copy = L[:]
+**Copying the list** L_copy = L[:]
 
 **remove** 
 
@@ -412,3 +412,98 @@ Denoted by Square brackets, Lists are mutable(we can change the element values i
 **Aliasing**
 
 Pointing the same object using various names.
+
+**Shallow copy**
+
+Syntax : new_list = copy.copy(old_list)
+
+In shallow copy mutating the old list will also mutate the new list,
+ but appending a new element to the list will not affect the copied list.
+
+    old_list = [[1,2],[3,4],[5,6]]
+    new_list = copy.copy(old_list)
+    old_list.append([7,8])
+    old_list[1][1] = 9
+
+Now, New list  [[1, 2], [3, 9], [5, 6]] Old list  [[1, 2], [3, 9], [5, 6], [7, 8]]
+
+**Deep copy**
+
+Syntax : new_list = copy.deepcopy(old_list)
+
+It creates a new object which is the copy of now existing object, 
+then after the changes in old list will not affect the new list.
+
+    old_list = [[1,2],[3,4],[5,6]]
+    new_list = copy.deepcopy(old_list)
+    old_list.append([7,8])
+    old_list[1][1] = 9
+
+Now, New list  [[1, 2], [3, 4], [5, 6]], Old list  [[1, 2], [3, 9], [5, 6], [7, 8]]
+
+## Lecture 11
+
+### List comprehension
+
+Creates a new list, Applies a function to every element of another iterable that satisfies the condition.
+
+    Syntax : [expression for element in iterable if test]
+
+### Keyword parameters
+
+It is also known as default parameter. In a function the parameter can be set to a default value.
+When the function is called without the parameter it would set that to default value and if the parameter is given
+to the function the value changes. Default parameter must go at the end in function call.
+
+### Testing
+
+#### Classes of Tests
+
+**Unit Testing**
+
+Validate each piece of program, testing each function separately
+
+**Regression Testing**
+
+Add tests for bugs as you find them, Catch introduced errors that were previously fixed
+
+**Integration Testing**
+
+Does overall program works.
+
+### Black box technique
+
+Designed without looking at the code.
+Testing can be reused if the implementation changes.
+Build test case in natural space partitions.
+Also consider the boundary conditions.
+
+### Glass box testing
+
+Use code directly to guide design of test case.
+Called path complete if every potential path through code is tested at least once.
+It has some drawbacks like can go through the loops arbitrarily many times, missing paths.
+
+### Debugging
+
+Once we have discovered the code doesn't run properly then we want to
+
+1. Isolate the bug
+2. Eradicate the bug
+3. Retest until all the test cases run correctly
+4. Steep learning curve
+
+### Certain error messages
+
+IndexError - trying to access beyond the limits of list
+
+TypeError - Trying to convert an inappropriate time
+
+NameError - Referencing a non existent variable
+
+SyntaxError - error in the syntax of the code
+
+#### Using print statements
+
+Use print statement at Enter function, Parameters, Return result of functions.
+Print at the halfway in code and based on values decide where bug may be present.
