@@ -441,7 +441,7 @@ then after the changes in old list will not affect the new list.
 
 Now, New list  [[1, 2], [3, 4], [5, 6]], Old list  [[1, 2], [3, 9], [5, 6], [7, 8]]
 
-## Lecture 11
+## Lecture 12
 
 ### List comprehension
 
@@ -507,3 +507,65 @@ SyntaxError - error in the syntax of the code
 
 Use print statement at Enter function, Parameters, Return result of functions.
 Print at the halfway in code and based on values decide where bug may be present.
+
+## Lecture 13
+
+### Exceptions
+
+The code goes to an unexpected condition is called exceptions. Typically exception causes an error to occur and the python program stops executing.
+Python provides the exception handler to prevent this.
+
+    Keywords: try, except, else, finally
+
+The exceptions raised inside try block are handled using the except block.
+The program could have the separate except clauses to handle different exceptions.
+Else block after try block executes only when there are no exceptions inside the try block.
+Finally block will be executed irrespective of the exception in the try block.
+
+### Assertions
+
+Defensive programming tool. Use assert statement to raise asserterror if the assumptions are not met.
+
+## Lecture 14
+
+### Dictionary
+
+python dictionary create entries as a key value pair
+
+- key any immutable object
+- value any data object
+
+#### Dictionary Lookup
+
+Similar to indexing in List, Lookup the key and return the value associated with thw key.
+If the key isn't found gives the key error.
+
+#### Dictionary Operations
+
+There are several operation that can be done in the dict
+- add an entry: dict_name[key_name] = value_name (adds a new key value pair)
+- change an entry: dict_name[key_name] = new_value (changes the value for the key)
+- delete an entry: del(dict_name[key_to_delete]) (Deletes the entry from dictionary)
+- check if key is in dictionary: 'key_name' in dict_name (returns true if the key is in dictionary otherwise returns False)
+- dict_name.keys(): returns a tuple containing all dictionary keys
+- dict_name.values(): returns a tuple containing all dictionary values
+- dict_name.items(): returns a tuple of all entries in the dictionary
+
+#### Dictionary keys and values
+
+Dictionaries are mutable objects "=" is used for cloning, d.copy() is used to make a copy
+
+Dict values:
+- Any type
+- Can be duplicates
+
+Dict keys:
+- Must be unique
+- Immutable type
+
+| List	| Dictionary |
+|--------|-----------|
+|Ordered collection	| Unordered key-value pairs |
+| Lookup elements by integer index | Lookup one item by another item|
+| Indices have an order | No order is guaranteed|
+| Index is an integer | key can be any immutable type|
