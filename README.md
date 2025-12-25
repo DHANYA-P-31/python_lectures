@@ -47,7 +47,9 @@
    In computer science the variable is bound to single value at a time whereas in maths it could have multiple values.
    By assigning variables to values we could reuse it, and it improves the readability of program.
    The value of variable can also be rebounded.
-   
+
+---
+
 ## Lecture_2 Notes
 
 ### Strings
@@ -167,6 +169,8 @@ First block where the condition is true is performed, when all conditions in if 
 
 ***Indentation matters in python***
 
+---
+
 ## Lecture 3 notes
 
 ### Iteration
@@ -194,6 +198,8 @@ step : generates in the steps of.
 
     range(start,stop,step)
 
+---
+
 ## Lecture 4 Notes
 
 **break Statement**
@@ -214,6 +220,8 @@ the small error will have big effect if operations are done many times.
 The implementation of float depends on computer hardware and not on the programming language.
 The hardware is implemented using binary.
 We enter the inputs in decimal and computer converts it to binary
+
+---
 
 ## Lecture 5 Notes
 
@@ -240,6 +248,8 @@ Approximation algorithms have 2 parameters
 
 Increasing epsilon - less accurate and faster program
 Decreasing increment = more accurate and slower program
+
+---
 
 ## Lecture 6 Notes
 
@@ -270,6 +280,8 @@ Decomposition - The program is divided into self containing parts and can be com
 
 Abstraction - Ignore the unnecessary details, used to separate what something does and how does it do.
 
+---
+
 ## Lecture 7
 
 ### Functions:
@@ -296,6 +308,8 @@ As soon as function is called formal parameters in the function get replaced wit
 Python executes expression in the body of the function
 
 The function call is replaced by return value. If there is no return value python returns None.
+
+---
 
 ## Lecture_8
 
@@ -343,6 +357,8 @@ Functions are also first class Objects
 2. They can be assigned to a value bound to name
 3. They can be used as argument to another function
 4. Function can be returned by other object
+
+---
 
 ## Lecture_9
 
@@ -399,6 +415,8 @@ Denoted by Square brackets, Lists are mutable(we can change the element values i
 
 **clear** - clear is used to remove all elements from list
 
+---
+
 ## Lecture_11
 
 **Copying the list** L_copy = L[:]
@@ -440,6 +458,8 @@ then after the changes in old list will not affect the new list.
     old_list[1][1] = 9
 
 Now, New list  [[1, 2], [3, 4], [5, 6]], Old list  [[1, 2], [3, 9], [5, 6], [7, 8]]
+
+---
 
 ## Lecture 12
 
@@ -508,6 +528,8 @@ SyntaxError - error in the syntax of the code
 Use print statement at Enter function, Parameters, Return result of functions.
 Print at the halfway in code and based on values decide where bug may be present.
 
+---
+
 ## Lecture 13
 
 ### Exceptions
@@ -525,6 +547,8 @@ Finally block will be executed irrespective of the exception in the try block.
 ### Assertions
 
 Defensive programming tool. Use assert statement to raise asserterror if the assumptions are not met.
+
+---
 
 ## Lecture 14
 
@@ -563,9 +587,20 @@ Dict keys:
 - Must be unique
 - Immutable type
 
-| List	| Dictionary |
+|**List**	| **Dictionary** |
 |--------|-----------|
 |Ordered collection	| Unordered key-value pairs |
 | Lookup elements by integer index | Lookup one item by another item|
 | Indices have an order | No order is guaranteed|
 | Index is an integer | key can be any immutable type|
+
+---
+
+## Lecture 15
+### Recursion
+
+Algorithmically recursion is a way to design solution to problems by divide and conquer and decrease and conquer.
+It reduces a problem to simpler version of same problem or problem that can be solved directly.
+
+Semantically it is a programming technique where a function calls itself.
+The recursion must have 1 or more base case and should solve same problem and should not lead to infinite recursion.
