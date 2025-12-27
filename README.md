@@ -596,7 +596,7 @@ Dict keys:
 
 ---
 
-## Lecture 15
+## Lecture 15 and 16
 ### Recursion
 
 Algorithmically recursion is a way to design solution to problems by divide and conquer and decrease and conquer.
@@ -604,3 +604,5 @@ It reduces a problem to simpler version of same problem or problem that can be s
 
 Semantically it is a programming technique where a function calls itself.
 The recursion must have 1 or more base case and should solve same problem and should not lead to infinite recursion.
+
+---
