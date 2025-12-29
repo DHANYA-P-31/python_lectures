@@ -534,7 +534,7 @@ Print at the halfway in code and based on values decide where bug may be present
 
 ### Exceptions
 
-The code goes to an unexpected condition is called exceptions. Typically exception causes an error to occur and the python program stops executing.
+The code goes to an unexpected condition is called exceptions. Typically, exception causes an error to occur and the python program stops executing.
 Python provides the exception handler to prevent this.
 
     Keywords: try, except, else, finally
@@ -546,7 +546,7 @@ Finally block will be executed irrespective of the exception in the try block.
 
 ### Assertions
 
-Defensive programming tool. Use assert statement to raise asserterror if the assumptions are not met.
+Defensive programming tool. Use assert statement to raise assert error if the assumptions are not met.
 
 ---
 
@@ -587,12 +587,12 @@ Dict keys:
 - Must be unique
 - Immutable type
 
-|**List**	| **Dictionary** |
-|--------|-----------|
-|Ordered collection	| Unordered key-value pairs |
-| Lookup elements by integer index | Lookup one item by another item|
-| Indices have an order | No order is guaranteed|
-| Index is an integer | key can be any immutable type|
+| **List**	                        | **Dictionary**                  |
+|----------------------------------|---------------------------------|
+| Ordered collection	              | Unordered key-value pairs       |
+| Lookup elements by integer index | Lookup one item by another item |
+| Indices have an order            | No order is guaranteed          |
+| Index is an integer              | key can be any immutable type   |
 
 ---
 
@@ -606,3 +606,51 @@ Semantically it is a programming technique where a function calls itself.
 The recursion must have 1 or more base case and should solve same problem and should not lead to infinite recursion.
 
 ---
+
+## Lecture 17
+### Python Classes
+
+An object is an instance of class or type.
+E.g. 123 is an instance of int.
+
+#### Object Oriented Programming
+
+Everything in python is an object, and has a type. We can create new object of some type, manipulate object, and destroy object.
+
+**What are Objects?**
+
+Objects are data abstraction that captures an 
+1. Internal abstraction through data attributes.
+2. Interface for interacting with object through methods and define behaviour but hides implementation.
+
+#### Advantages of OOP
+
+- Bundle data into packages together with procedures that work on them through well-defined interfaces.
+- Divide and conquer development implement and test behaviour of each class separately, increased modularity reduced complexity.
+- Classes make it easy to reuse code
+    - Many Python modules define new classes
+    - each class has a separate environment
+    - Inheritance allow subclasses to redefine or extend a selected subset of superclass behavior.
+
+#### Creating and using a own type of classes
+
+Creating a class involves
+- Defining the class name
+- Defining Class attributes
+
+Using the class involves
+- Creating a new instance of class
+- Doing operation on the instance.
+
+Defining a class is similar to defining a function. In function, we tell this procedure exists, with classes we tell blueprint for this new datatype
+and its attributes and procedural attributes.
+
+Creating an instance of the object is like calling the function. In function, we call with actual parameter, with classes we create a new instance of memory of this type.
+
+*Class* Keyword to define a new type.
+
+Attributes are the data and procedure that belongs to that class.
+
+self allows to create variables belonging to that object.
+
+The "." operator is used to access any attribute.
