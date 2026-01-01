@@ -607,7 +607,7 @@ The recursion must have 1 or more base case and should solve same problem and sh
 
 ---
 
-## Lecture 17
+## Lecture 17 and 18
 ### Python Classes
 
 An object is an instance of class or type.
@@ -654,3 +654,5 @@ Attributes are the data and procedure that belongs to that class.
 self allows to create variables belonging to that object.
 
 The "." operator is used to access any attribute.
+
+---
