@@ -656,3 +656,16 @@ self allows to create variables belonging to that object.
 The "." operator is used to access any attribute.
 
 ---
+
+## Lecture 19
+
+### Inheritance
+
+Parent Class - super class
+
+Child Class - Sub class
+- Inherits all data and behaviour of parent class
+- Add more info
+- Add behaviour
+- Override behaviour
+
