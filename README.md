@@ -669,3 +669,20 @@ Child Class - Sub class
 - Add behaviour
 - Override behaviour
 
+## Lecture 20
+
+### Fitness Tracker
+
+#### Implement the class
+
+- Define the class
+- Define data attributes
+- Define methods
+- Class captures new property and behaviour
+
+#### Using the class
+
+- create instance of object type
+- Do operations with them
+- Instances have specific values for attributes
+
