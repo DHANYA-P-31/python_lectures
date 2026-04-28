@@ -686,3 +686,13 @@ Child Class - Sub class
 - Do operations with them
 - Instances have specific values for attributes
 
+## Lecture 21
+
+### Efficiency
+
+- Time and space efficiency
+- There is a reade off between them
+
+### Module
+
+Set of python definitions in a program
